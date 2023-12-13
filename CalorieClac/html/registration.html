@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+    <body>
+        <img src="{% static 'food3.jpg' %}" style="width: 100%;height: 100%;">
+    <form action="registerPage" method="post" width="1000px";height="500px" style="background-color: black;opacity: 0.7;width:2000px;height: 450px;margin-left: 50px;padding-left: 4px;">
+        {% csrf_token %}
+        <h1 style="padding-left: 860px;margin-top: -550px;color: white;" >REGISTER ACCOUNT</h1>
+       <label style="padding-left: 900px;margin-top: -550px;color: white;font-size: 25px;">Username</label>
+       <br>
+       <input type="text" name="un" placeholder="Enter Name"style="padding-left: 100px;margin-left:900px ;">
+       <br>
+       <br>
+       
+       <label style="padding-left:900px;margin-top:-550px;color: white;font-size: 25px;" >Email</label>
+       <input type="email" name="em"  placeholder="Enter Email"style="padding-left: 100px;margin-left:900px ;">
+       <br>
+       <br>
+       <label style="padding-left:900px;margin-top:-550px;color: white;font-size: 25px;" > Enter Password</label>
+       <input type="password" name="ps"  placeholder="Enter Password"style="padding-left: 100px;margin-left:900px ;">
+       <br>
+       <br>
+       <label style="padding-left:900px;margin-top:-550px;color: white;font-size: 25px;" >Re-enter Password</label>
+       <input type="password" name="cps"  placeholder="Enter Confirm Password"style="padding-left: 100px;margin-left:900px ;">
+       <br>
+       <br>
+       <button type="submit"  style="padding-left:110px;padding-right: 110px;margin-left:898px;margin-top: 10px; background-color: orange; color: black;" >Register Account</button>
+       <br>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{% load static %}
+<html>
+  <body style="background-image: url({% static 'food5.jpg' %});background-repeat:no-repeat;background-size:cover;">
+    <form action="home" method="post">
+      {% csrf_token %}
+    
+    <p style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 40px;color:darkred;margin-top: 180px;margin-left: 300px;">To Know the Calorie of Food you Consumed...</p>
+      <br>
+      <br>
+      <center><button style="background-color:darkgreen;border-color:darkgreen;width:150px;height:50px;font-size: 20px;"><a href="/calorie"style="text-decoration:none;color: aliceblue;">Press Here</a></button></center>
+    
+     
+      
+    </form>
+    </body>   
+    </html>
+          

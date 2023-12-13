@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <body>
+        <img src="{% static 'food2.jpg' %}"style="width: 100%;height: 100%;">
+        <form action="loginPage" method="post" style="background-color: black;opacity: 0.7;height: 270px;width:100%;margin-bottom: 500px;">
+        {% csrf_token %}  
+        <h1 style="color: brown;padding-left: 82px;margin-left: 540px;font-size: 20px;margin-top: -500px;">{{error}}</h1>
+        <br>
+        <br>
+        <h1 style="padding-left: 718px;font-size: 25px;margin-top: -30px;color: white;">LOGIN</h1>
+        <label  style="padding-left:740;font-size: 18px;margin-top: -560px;color: white;">Email</label>  
+        <br>
+        <input type="email" name="em" style="padding-left: 80px;margin-left: 640px;">
+        <br>
+        <br>
+        <label style="padding-left: 730px;font-size: 18px;margin-top: -560px;color: white;">Password</label>  
+        <br>
+        <input type="password" name="ps" style="padding-left: 80px;margin-left: 640px;">
+        <br>
+        <br>
+        <button type="Submit" style="padding-left: 80px;margin-left:662px;padding-right: 80px;background-color: orange; color: white;">Login</button>  
+        </form>
+    </body>
+</html>
